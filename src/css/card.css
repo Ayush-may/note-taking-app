@@ -1,0 +1,88 @@
+.card-container{
+    height: 250px;
+    position: relative;
+}
+
+.card-app{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+    height: 80vh;
+    user-select: none;
+}
+
+.my-card{
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: rgb(52, 52, 52);
+    border-radius: 5px;
+    overflow: hidden;
+    /* cursor: pointer; */
+    align-items: flex-start;
+
+    transition:  all 300ms ease-out ;
+}
+
+.my-card:hover{
+    transform: translateY(-5px);
+}
+
+.my-card-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-note-text{
+    word-wrap: break-word;
+    font-size: 15px !important;
+}
+
+.card-button-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.Card-app-outer-container{
+    height: 100vh;
+    display: flex;
+    /* flex-flow: column; */
+    flex-direction: column;
+}
+
+
+.card-app-container{
+    flex: 1;
+    overflow: auto;
+    /* margin-bottom: 10px;    */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.card-app-container::-webkit-scrollbar {
+    display: none;
+}
+  
+.menu-icon-card-button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.close-btn{
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.note-text{
+    user-select: none;
+}
+
